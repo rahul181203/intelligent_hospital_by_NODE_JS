@@ -1,0 +1,22 @@
+<%- include('partials/header') %>
+
+<div class="container">
+    <div class="row row-col-3" >
+            <% post.forEach(function(user){ %>
+                <%  if(user === null){ %>
+                    <h1 class="he">No recent applications</h1>
+              <%  }else{ %>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h1 class="card-title"><%= user.name %></h1>
+                        <h6 class="card-subtitle mb-2 text-muted"><%= user.mail %></h6>
+                        <p class="card-text"><%= user.description.substring(0,150) + ' ...' %></p>
+                        <a href="/recent/<%=user.id%>" class="card-link">Read more</a>
+                    </div>
+                </div>
+              <%  } %>
+            <% }); %>
+    </div>
+</div>
+
+<%- include('partials/footer') %>

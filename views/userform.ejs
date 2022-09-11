@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+    <div >
+        <div class="outlogin"  >
+            <form action="/post" method="post">
+                <fieldset>
+                    <legend>PATITENT INPUT FORM</legend>
+                    <small>Interact with the doctor through this form</small>
+
+                    <div class="form-group">
+                        <label class="col-form-label mt-4" for="inputDefault">Full Name</label>
+                        <input type="text" name="fullname" class="form-control" placeholder="Enter your Full Name" id="inputDefault" required/>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="exampleInputEmail1" class="form-label mt-4">Age</label>
+                        <input type="number" name="age" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter age" required/>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-form-label mt-4" for="inputDefault">Gender</label><br />
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="Male" />
+                            <medium>  Male</medium>
+                        </label><br />
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="Female" />
+                            <medium>  Female</medium>
+                        </label><br />
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="Others" />
+                            <medium>  Others</medium>
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputEmail1" class="form-label mt-4">Blood Pressure ( B.P )</label>
+                        <input type="text" name="bp" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Blood Pressure" required/>
+                    </div>
+
+                    <!-- <div class="form-group">
+                        <label for="exampleInputPassword1" class="form-label mt-4">Weight Blood-test reports</label>
+                        <input type="file" class="form-control" id="exampleInputPassword1" placeholder="Upload file" />
+                    </div> -->
+
+                    <div class="form-group">
+                        <label for="exampleInputEmail1" class="form-label mt-4">Urine test place & Disease Description</label>
+                        <textarea class="form-control" name="post" id="" cols="30" rows="10" placeholder="Type your symptoms of the disease" required></textarea>
+                    </div>
+                    <br /><br />
+                    <button type="submit" class="btn btn-outline-success">SUBMIT</button>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<%- include('partials/header') %>
+
+<div class='pd'>
+    <h1><b>Name:</b> <%=detail.name%></h1>
+    <h2><b>Email:</b> <%=detail.mail%></h2>
+    <p><b>Age:</b> <%=detail.age%></p>
+    <p><b>Gender:</b> <%=detail.gender%></p>
+    <p><b>BP:</b> <%=detail.bp%></p>
+    <p><b>Description:</b> <%=detail.description%></p>
+</div>
+
+<div class="msg">
+    <strong>Doctor message:</strong> 
+    <% if(!detail.prescription){ %>
+    <p class="box">Your application is in pending ...</p>
+    <% }else{ %>
+        <p class="box"><%=detail.prescription%></p>
+   <%}%>
+    
+</div>
+
+<%- include('partials/footer') %>

@@ -1,0 +1,48 @@
+#sidebar{
+    position: absolute;
+    width: 25%;
+    height: 75%;
+    left: -35%;
+    background-color: black;
+    display: block;
+    z-index: 1;
+    border-bottom-right-radius: 30px;
+}
+
+#sidebar li{
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    list-style-type: none;
+    border-bottom: 1px solid gray;
+    /* text-align: center; */
+}
+
+#sidebar li a{
+    text-decoration: none;
+    color: white;
+}
+
+.menu{
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+}
+
+#sidebar.active{
+    left:0;
+}
+
+.pd {
+    margin: 100px;
+}
+
+.msg{
+    margin: 100px;
+}
+
+.box{
+    margin: 10px;
+    padding: 50px;
+    border: 1px solid;
+}

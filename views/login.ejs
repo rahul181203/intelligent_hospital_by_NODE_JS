@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+    <div >
+        <div class="outlogin" >
+          <form action="/login" method="post">
+            <fieldset>
+              <legend>LOGIN PAGE</legend>
+    
+              <div class="form-group">
+                <label for="exampleInputEmail1" class="form-label mt-4">Email address</label>
+                <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required/>
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+    
+              <div class="form-group">
+                <label for="exampleInputPassword1" class="form-label mt-4">Password</label>
+                <input type="password" name="pass" class="form-control" id="exampleInputPassword1" placeholder="Password" required/>
+              </div>
+              <p style="color: red;"><%=msg%></p>
+              <br /><br />
+              <button type="submit" class="btn btn-outline-success">LOGIN</button>
+            </fieldset>
+          </form>
+        </div>
+        </div>
+</body>
+</html>

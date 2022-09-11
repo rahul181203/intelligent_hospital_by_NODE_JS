@@ -1,0 +1,22 @@
+<%- include('partials/doctor') %>
+
+<div class="container">
+    <div class="row row-col-3" >
+       <% if(posts === null){ %>
+            <h1>No applications yet</h1>
+       <% }else{ %>
+            <% posts.forEach(function(user){ %>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h1 class="card-title"><%= user.name %></h1>
+                        <h6 class="card-subtitle mb-2 text-muted"><%= user.mail %></h6>
+                        <p class="card-text"><%= user.description.substring(0,150) + ' ...' %></p>
+                        <a href="/details/<%=user.id%>" class="card-link">Read more</a>
+                    </div>
+                </div>
+            <% }); %>
+       <% } %>
+    </div>
+</div>
+
+<%- include('partials/footer') %>

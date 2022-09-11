@@ -1,0 +1,18 @@
+<%- include('partials/doctor') %>
+
+<div class='pd'>
+    <h1><b>Name:</b> <%=detail.name%></h1>
+    <h2><b>Email:</b> <%=detail.mail%></h2>
+    <p><b>Age:</b> <%=detail.age%></p>
+    <p><b>Gender:</b> <%=detail.gender%></p>
+    <p><b>BP:</b> <%=detail.bp%></p>
+    <p><b>Description:</b> <%=detail.description%></p>
+</div>
+<div class="form-group txt">
+    <form action="/details/<%=detail.id%>" method="post">
+        <label class="form-label mt-4">Prescription</label>
+        <textarea class="form-control bg" name="details" cols="30" rows="10" placeholder="methods for purification"></textarea>
+        <button class="btn btn-success press" type="submit">submit</button>
+    </form>
+</div>
+<%- include('partials/footer') %>
